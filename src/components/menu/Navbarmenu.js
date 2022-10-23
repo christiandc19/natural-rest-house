@@ -56,18 +56,19 @@ const Navbarmenu = () => {
 <div name='top' className='navbar'>
         <div className='navbar-container'>
 
-    <header className="header__middle">
-        <div className="container">
-            <div className="row">
+            <header className="header__middle">
+                <div className="container">
+                    <div className="row">
 
-                {/* Add Logo  */}
-                <div className="header__middle__logo">
-                    <NavLink exact activeClassName='is-active' to="/">
-                        <img src={logo} alt="logo" /> 
-                    </NavLink>
-                </div>
+                        {/* Add Logo  */}
+                    <div className="header__middle__logo">
+                        <NavLink exact activeClassName='is-active' to="/">
+                            <img src={logo} alt="logo" /> 
+                        </NavLink>
+                    </div>
 
-                <div className="header__middle__menus">
+                    <div className="header__middle__menus">
+                        
                     <nav className="main-nav " >
 
                     {/* Responsive Menu Button */}
@@ -109,14 +110,11 @@ const Navbarmenu = () => {
                     {/* CONTACT */}
                     <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Contact`}> Contact </NavLink> </li>
 
-
-
-
-
                     </ul>
 
-
                     </nav>     
+                    <div className='btn'><button>+1 (442) 666-8526</button></div>
+
                 </div>   
 
 

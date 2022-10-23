@@ -1,27 +1,34 @@
 .home-section {
     width: 100%;
-    height: 100vh;
+    height: 75vh;
     background: white;
 }
 
 .home-section .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    display: flex;
+    padding: 0%;
 }
 
 .home-section .content {
     height: 75vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
-    margin-left: 6rem;
+    text-align: center;
+    margin: auto;
 }
 
 .home-section h1 {
-    color: #151414;
+    color: var(--primary-color);
+    margin: 2rem;
 }
 
+.home-section .content p {
+    align-items: center;
+    margin-left: 20rem;
+    margin-right: 20rem;
+
+}
 
 
 @media  screen and (max-width:940px) {
