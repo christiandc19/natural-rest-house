@@ -7,10 +7,15 @@
 
 /* -----------------------------------------------------> NAVBAR CONTAINER AND BG*/
 .navbar .navbar-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: right;
-    background-color: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
+
+    
 }
 
 .header__middle {
@@ -32,14 +37,15 @@
 
 /* -----------------------------------------------------> LOGO SIZE */
 .header__middle img {
-    width: 90%;
+    width: 35%;
+    padding-left: 15rem;
   }
 
 
 /* -----------------------------------------------------> NAVBAR MENU & SUB-MENU ITEMS */
 .menu-item a {
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 40px;
     position: relative;
     display: block;
@@ -103,12 +109,25 @@
     /* -----------------------------------------------------> MEDIA QUERIES */
 
     @media screen and (max-width: 940px) {
+
+
+
       .sub__menus {
             background: rgba(255, 255, 255,);
           }
     
           .header__middle img {
             width: 70%;
+          }
+
+          .header__middle img {
+            width: 23%;
+            padding-left: 2rem;
+          }
+        
+
+          .navbar .navbar-container {
+            height: 100%;
           }
         
         }

@@ -1,19 +1,15 @@
 .anxiety {
     width: 100%;
-    height: 70vh;
+    position: relative;
+    height: 50vh;
     background: url(../../assets/anxiety-bg.jpg) no-repeat center center/cover;
 }
 
-.anxiety .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
 .anxiety .content {
-    margin-top: 25%;
-    flex-direction: column;
+    margin-top: 10%;
+    position: absolute;
     justify-content: center;
-    padding-left: 4rem;
+    margin-left: 50%;
 }
 
 .anxiety h1 {
@@ -34,15 +30,13 @@
     width: 100%;
     height: 70vh;
     background: rgba(0, 0, 0, 0);
+    position: relative;
 }
 
-.anxietySection .anxietySection {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
 
-.anxietySection .anxietySection {
-    margin-top: 25%;
+.anxietySection .anxietyContent {
+    position: absolute;
+    margin-top: 10%;
     flex-direction: column;
     justify-content: center;
     padding-left: 4rem;
