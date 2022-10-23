@@ -8,9 +8,9 @@
 /* -----------------------------------------------------> NAVBAR CONTAINER AND BG*/
 .navbar .navbar-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: right;
-    background-color: rgba(220, 216, 216, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .header__middle {
@@ -27,6 +27,12 @@
     margin: 0px auto 0;
     padding: 0;
     z-index: 7;
+  }
+
+
+/* -----------------------------------------------------> LOGO SIZE */
+.header__middle img {
+    width: 90%;
   }
 
 
@@ -96,9 +102,13 @@
 
     /* -----------------------------------------------------> MEDIA QUERIES */
 
-    @media screen and (min-width: 576px) {
-        .sub__menus {
+    @media screen and (max-width: 940px) {
+      .sub__menus {
             background: rgba(255, 255, 255,);
           }
     
+          .header__middle img {
+            width: 70%;
+          }
+        
         }

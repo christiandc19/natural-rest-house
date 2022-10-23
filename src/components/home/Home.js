@@ -1,18 +1,24 @@
 import React from 'react'
 import './HomeStyles.css'
+import './HomeSection'
+import HomeSection from './HomeSection'
 
 const Home = () => {
   return (
+    <>
     <div className='hero'>
         <div className='container'>
             <div className='content'>
-                <h1>Data</h1>
-                <h1 className='blue'>Secured</h1>
-                <h1>Protection</h1>
+                <h1>Natural</h1>
+                <h1>Rest House</h1>
                 <div><button>Learn More</button></div>
             </div>
         </div>
     </div>
+
+    <HomeSection/>
+
+    </>
   )
 }
 

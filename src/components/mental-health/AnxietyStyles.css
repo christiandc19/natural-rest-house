@@ -1,0 +1,37 @@
+.anxiety {
+    width: 100%;
+    height: 100vh;
+    background: url(../../assets/anxiety-bg.jpg) no-repeat center center/cover;
+}
+
+.anxiety .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.anxiety .content {
+    margin-top: 25%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4rem;
+}
+
+.anxiety h1 {
+    color: #f8f8f8;
+    font-size: 60px;
+}
+
+.anxiety .blue {
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 940px) {
+    
+    .anxiety .content {
+        flex-direction: column;
+        justify-content: center;
+        padding: 5rem 2rem;
+    }
+
+    
+}

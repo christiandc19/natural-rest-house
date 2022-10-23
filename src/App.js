@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import './App.css';
 
-import Home from './components/Home';
+import Home from './components/home/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 
