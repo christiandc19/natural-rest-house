@@ -4,14 +4,14 @@ import './App.css';
 
 import Home from './components/Home';
 import About from './components/About';
-import Online from './components/Online';
-import Offline from './components/Offline';
 import Contact from './components/Contact';
-import Anxiety from './components/mental-health/Anxiety';
 
+import Cocaine from './components/substance/Cocaine';
+import Alcohol from './components/substance/Alcohol';
+import Anxiety from './components/mental-health/Anxiety';
+import Bipolar from './components/mental-health/Bipolar';
 
 import Navbarmenu from './components/menu/Navbarmenu';
-import Bipolar from './components/mental-health/Bipolar';
 
 function App() {
   return (
@@ -24,12 +24,12 @@ function App() {
         <Switch> 
           <Route exact path="/" component={Home}/>
           <Route path="/About" component={About}/>
-          <Route path="/Online" component={Online}/>
-          <Route path="/Offline" component={Offline}/>
           <Route path="/Contact" component={Contact}/>
+
           <Route path="/Anxiety" component={Anxiety}/>
           <Route path="/Bipolar" component={Bipolar}/>
-
+          <Route path="/Alcohol" component={Alcohol}/>
+          <Route path="/Cocaine" component={Cocaine}/>
 
           
         </Switch>

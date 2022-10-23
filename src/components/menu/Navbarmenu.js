@@ -1,7 +1,8 @@
 import React,{useState} from 'react';
 import {NavLink, Link} from 'react-router-dom';
 import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
-import logo from '../../img/logo.png';
+import logo from '../../assets/logo.png';
+import './Navbarmenu.css'
 
 
 const Navbarmenu = () => {
@@ -50,6 +51,11 @@ const Navbarmenu = () => {
    
 
     return (
+        <>
+
+<div name='top' className='navbar'>
+        <div className='navbar-container'>
+
     <header className="header__middle">
         <div className="container">
             <div className="row">
@@ -83,22 +89,21 @@ const Navbarmenu = () => {
                     {/* MENTAL HEALTH */}
                     <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> Mental Health <FiChevronDown /> </Link>
                         <ul className={boxClassSubMenu.join(' ')} > 
-                            <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/Online`}> Anxiety </NavLink> </li>
-                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> Bipolar </NavLink> </li>
+                            <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/Anxiety`}> Anxiety </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Bipolar`}> Bipolar </NavLink> </li>
                         </ul>
                     </li>
 
-                    {/* ABOUTE */}
-                    <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/About`}> About </NavLink> </li>
-
-
-                    {/* SHOP */}
-                    <li onClick={toggleSubmenu2} className="menu-item sub__menus__arrows" > <Link to="#"> Shop <FiChevronDown /> </Link>
+                            {/* SUBSTANCE */}
+                    <li onClick={toggleSubmenu2} className="menu-item sub__menus__arrows" > <Link to="#"> Substance <FiChevronDown /> </Link>
                         <ul className={boxClassSubMenu2.join(' ')} > 
-                            <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/Online`}> Online Shop </NavLink> </li>
-                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> Offline Shop </NavLink> </li>
+                            <li> <NavLink onClick={toggleClass} activeClassName='is-active'  to={`/Alcohol`}> Alcohol </NavLink> </li>
+                            <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Cocaine`}> Cocaine </NavLink> </li>
                         </ul>
                     </li>
+
+                    {/* ABOUT */}
+                    <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/About`}> About </NavLink> </li>
 
 
                     {/* CONTACT */}
@@ -121,6 +126,9 @@ const Navbarmenu = () => {
             </div>
 	    </div>
     </header>
+    </div>
+    </div>
+    </>
     )
 }
 

@@ -1,9 +1,19 @@
 import React from 'react'
+import './HomeStyles.css'
+
 const Home = () => {
-	return (
-        <div className="sec__one">
-			<h1> Home </h1>
+  return (
+    <div className='hero'>
+        <div className='container'>
+            <div className='content'>
+                <h1>Data</h1>
+                <h1 className='blue'>Secured</h1>
+                <h1>Protection</h1>
+                <div><button>Learn More</button></div>
+            </div>
         </div>
-       )
+    </div>
+  )
 }
+
 export default Home

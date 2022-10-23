@@ -1,0 +1,104 @@
+.navbar {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+}
+
+/* -----------------------------------------------------> NAVBAR CONTAINER AND BG*/
+.navbar .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    background-color: rgba(220, 216, 216, 0.2);
+}
+
+.header__middle {
+    display: flex;
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+
+  ul.main-menu {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin: 0px auto 0;
+    padding: 0;
+    z-index: 7;
+  }
+
+
+/* -----------------------------------------------------> NAVBAR MENU & SUB-MENU ITEMS */
+.menu-item a {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 40px;
+    position: relative;
+    display: block;
+    color: #ffffff;
+    margin: 27px 17px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .menu-item .sub__menus li a {
+    color: #000000 !important;
+  }
+
+  .menu-item .sub__menus li:hover a {
+    color: #07a8ff !important;
+  }
+
+/* -----------------------------------------------------> SUB MENU */
+  .sub__menus {
+    position: absolute;
+    display: none;
+    background: white;
+    border: 1px solid lavender;
+    width: 227px;
+    left: -17px;
+    padding: 2px 0 0 0;
+    z-index: 1000;
+    /* box-shadow: 0 10px 12px rgb(22 33 39 / 25%); */
+  }
+
+  /* -----------------------------------------------------> ACTIVE MENU */
+  .is-active {
+    color: #ff5800!important;
+  }
+  /* -----------------------------------------------------> DROPDOWN ARROW */
+  .sub__menus__arrows {
+    position: relative;
+  }
+
+  .sub__menus__arrows svg, .sub__menus__arrows__full svg {
+    padding-top: 0px;
+    position: absolute;
+    top: 13px;
+  }
+
+
+  /* -----------------------------------------------------> HOVER ON MAIN MENU */
+  .menu-item:hover > a{
+    color: #000000 !important;
+  }
+  
+
+
+
+
+
+
+
+
+
+    /* -----------------------------------------------------> MEDIA QUERIES */
+
+    @media screen and (min-width: 576px) {
+        .sub__menus {
+            background: rgba(255, 255, 255,);
+          }
+    
+        }
