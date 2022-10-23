@@ -1,6 +1,6 @@
 .anxiety {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     background: url(../../assets/anxiety-bg.jpg) no-repeat center center/cover;
 }
 
@@ -24,6 +24,40 @@
 .anxiety .blue {
     color: var(--primary-color);
 }
+
+
+
+
+/* ----------------------------------> SECTION */
+
+.anxietySection {
+    width: 100%;
+    height: 70vh;
+    background: rgba(0, 0, 0, 0);
+}
+
+.anxietySection .anxietySection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.anxietySection .anxietySection {
+    margin-top: 25%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4rem;
+}
+
+.anxietySection h1 {
+    color: #000000;
+    font-size: 60px;
+}
+
+.anxietySection .blue {
+    color: var(--primary-color);
+}
+
+
 
 @media screen and (max-width: 940px) {
     
