@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+.card-name {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem;
+}
+
+.card-desc {
+    color: var(--primary-color);
+    text-align: center;
+    margin: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: smaller;
+}
+
+.servicesCards {
+     margin: 2rem;
+    padding-top: 1rem;
+    height: 400px;
+    width: 370px;
+    border: 1px solid rgb(224, 214, 214);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);   
+}
+
+.servicesCards:hover {
+    border: 1.5px solid var(--primary-color);
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.servicesCards img {
+    width: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.servicesCards button {
+    width: fit-content;
+    margin: auto;
+}
+
+
+/* END OF SERVICES CARDS */

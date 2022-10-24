@@ -2,7 +2,10 @@ import React from 'react'
 import Fade from 'react-reveal/Fade';
 import './HomeStyles.css'
 import './HomeSection'
+import './ServicesCards'
+import './ServicesCardsStyles.css'
 import HomeSection from './HomeSection'
+import Footer from '../footer/Footer';
 
 const Home = () => {
   return (
@@ -24,7 +27,7 @@ const Home = () => {
     </div>
 
     <HomeSection/>
-
+    <Footer />
     </>
   )
 }
