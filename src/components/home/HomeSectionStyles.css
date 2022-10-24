@@ -38,6 +38,10 @@
     margin-top: 2rem;
 }
 
+.section-three h1 {
+    color: var(--primary-color)
+}
+
 /* WHAT WE DO */
 
 .service-3 {
@@ -74,7 +78,6 @@
     width: 100%;
     height: 50vh;
     position: relative;
-    background: rgba(255, 255, 255, 0);
 }
 
 .InsuranceSection .content {
@@ -92,17 +95,18 @@
     margin-bottom: 2rem;
 }
 
-.InsuranceSection .content h2 {
+.InsuranceSection .content h1 {
+    color: var(--primary-color);
     text-align: center;
     margin: auto;
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
 }
 
 .insurance-thumbnail img {
     margin: 5px;
     width: 200px;
     padding: 5px;
-    border: 1px solid var(--primary-color);
+    border: 3px solid var(--primary-color);
     border-radius: 1rem;
 }
 
@@ -138,11 +142,7 @@ margin-top: 1rem;
     .InsuranceSection p {
         font-size: 15px;
     }
-}
 
-
-
-@media  screen and (max-width:940px) {
     .hero .content {
         margin-left: 1rem;
     }

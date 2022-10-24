@@ -38,7 +38,7 @@
 }
 
 @media screen and (max-width: 940px) {
-    
+
     .hero .content {
         flex-direction: column;
         justify-content: center;
@@ -53,5 +53,5 @@
         font-size: 50px;
     }
 
-    
+
 }
