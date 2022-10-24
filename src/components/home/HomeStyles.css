@@ -42,7 +42,7 @@
     .hero .content {
         flex-direction: column;
         justify-content: center;
-        padding: 5rem 2rem;
+        padding: 7rem 2rem;
     }
 
     .hero {
@@ -50,8 +50,15 @@
     }
 
     .hero h1 {
-        font-size: 50px;
+        font-size: 35px;
     }
 
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
 
 }

@@ -31,7 +31,10 @@ import Team4 from '../../assets/team-image-4.jpg'
 import Team5 from '../../assets/team-image-5.jpg'
 import Team6 from '../../assets/team-image-6.jpg'
 
-
+import Therapy from '../../assets/therapy.jpg'
+import Staff from '../../assets/staff.jpg'
+import Clinic from '../../assets/clinic.jpg'
+import Work from '../../assets/employment-assistance2.jpg'
 
 const HomeSection = () => {
     return (
@@ -96,12 +99,14 @@ const HomeSection = () => {
                 <div className='service-3-description'>
                     <Fade left>
 
-                        <p><span> What We Do </span>
-                            <br /> <br />
-                            At Natural Rest House Treatment Center, we offer different levels of care based on each individual’s needs. Our programs consist of an intensive outpatient program (IOP) and a more demanding and structured partial hospitalization program (PHP). You can be confident that our caring and professional staff will recommend the right level of care for you or your loved one.                    </p><br />
-                        <p>
+                        <h1>What We Do</h1>
+                             <br />
+                            <p>At Natural Rest House Treatment Center, we offer different levels of care based on each individual’s needs. Our programs consist of an intensive outpatient program (IOP) and a more demanding and structured partial hospitalization program (PHP). You can be confident that our caring and professional staff will recommend the right level of care for you or your loved one.                    </p><br />
+                       
+                       <p>
                             Counselor and client will work together to compose a treatment plan with clear objectives and goals based on key areas intake assessment. It will include: challenges that the client may encounter during recovery process, clear methods of navigating obstacles in recovery, action steps to be taken by the program and/or client to overcome the challenges of recovery.
                         </p><br />
+
                         <p>
                             You may have lost your way but here you won’t get lost in the crowd. Nartural Rest House is an inviting, home-like environment where compassionate clinicians and staff members work collaboratively with you to address your unique needs. Rooted in the 12-step philosophy and a trauma-informed, evidence-based approach, we’ll show you how to manage and live with addiction, co-occurring disorders and other underlying issues, like anxiety or depression. Surrounded by a supportive recovery community, you’ll heal internally and, in turn, heal your relationships. Find your footing here and get ready for the next phase of your life.
                         </p>
@@ -183,8 +188,83 @@ const HomeSection = () => {
                 </div>
             </div>
 
-            {/* ---------------------------------------> TEAMS */}
+            {/* --------------------------------------> WHY CHOOSE US */}
 
+
+            <div className='mission-section'>
+            <div className="container">
+                <div className="content">
+                    <h1>WHY CHOOSE NATURAL REST HOUSE</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi officiis unde perferendis voluptas laborum aliquam culpa officia a maiores porro. Consequuntur officia corporis aliquam numquam, fuga quisquam illo. Obcaecati, voluptatum.</p>
+
+
+                            <div className='flex-right'>
+
+                            <Fade top>
+                    <div className='thumbnail'>
+                        <div><img src= { Therapy } alt="Aetna Logo" loading="lazy" />                    
+                        <p>Therapy and support groups for either addiction or mental health disorders</p>
+                        </div>
+                    </div>
+                    </Fade>
+
+
+                    <Fade bottom>
+                    <div className='thumbnail'>
+                        <img src= { Staff } alt="Beacon Logo" loading="lazy" /> 
+                        <p>Compassionate staff that is dedicated to your success</p>
+                    </div>
+                    </Fade>
+
+                    <Fade top>
+                    <div className='thumbnail'>
+                        <img src= { Clinic } alt="Bluecross Logo" loading="lazy" />   
+                        <p>Evidence-based practices that give you the best chance of recovery</p>
+                    </div>
+                    </Fade>
+
+                    <Fade bottom>
+                    <div className='thumbnail'>
+                        <img src= { Work } alt="Cigna Logo" loading="lazy" /> 
+                        <p>There are a variety of programs and organizations that fall under the umbrella of employment-based recovery support services.</p>  
+                    </div>
+                    </Fade>                            
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+            {/* ---------------------------------------> VIEW OUR TESTIMONIALS SECTION */}
+
+
+            <div className='TestimonialsHero'>
+            <div className="testimonials-container">
+                <div className="content">
+                    <h1>Hear What Our Clients Say</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi officiis unde perferendis voluptas laborum aliquam culpa officia a maiores porro. Consequuntur officia corporis aliquam numquam, fuga quisquam illo. Obcaecati, voluptatum.</p>
+                    <div>
+                        {/* <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500} > */}
+                        <Link to="/contact">
+                        <button className='TestimonialsHero-btn'>View Testimonials</button>
+                        </Link>
+                        {/* </LinkRoll> */}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+            {/* ---------------------------------------> TEAMS */}
+            
+            <div className='team-header'>
+            <h1>Meet our Team</h1>
+            </div>
 
             <div className='main'>
         <Team 
